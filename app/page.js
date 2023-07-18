@@ -140,7 +140,7 @@ export default function Home() {
             <img width={74} src="/loading.svg" alt="" />
           </div>
         )}
-        <div className="dropcontainer absolute w-full sm:w-72 border-1 bg-purple-100 rounded-md">
+        <div className="dropcontainer absolute w-full sm:w-72 border-1 bg-green-100 rounded-md">
           {dropdown.map((item) => (
             <div key={item.slug} className="container flex justify-between p-2 my-1 border-b-2">
               <span className="slug">
@@ -152,7 +152,7 @@ export default function Home() {
                     buttonAction('minus', item.slug, item.quantity);
                   }}
                   disabled={loadingaction}
-                  className="subtract inline-block px-3 py-1 cursor-pointer bg-purple-500 text-white font-semibold rounded-lg shadow-md disabled:bg-purple-200"
+                  className="subtract inline-block px-3 py-1 cursor-pointer bg-green-500 text-white font-semibold rounded-lg shadow-md disabled:bg-purple-200"
                 >
                   -
                 </button>
@@ -162,7 +162,7 @@ export default function Home() {
                     buttonAction('plus', item.slug, item.quantity);
                   }}
                   disabled={loadingaction}
-                  className="add inline-block px-3 py-1 cursor-pointer bg-purple-500 text-white font-semibold rounded-lg shadow-md disabled:bg-purple-200"
+                  className="add inline-block px-3 py-1 cursor-pointer bg-green-500 text-white font-semibold rounded-lg shadow-md disabled:bg-purple-200"
                 >
                   +
                 </button>
